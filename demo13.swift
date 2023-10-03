@@ -26,3 +26,9 @@ print(aceDescription)
 let two = Rank.two
 let twoRawValue = two.rawValue
 print(two, twoRawValue)
+
+var threeDescription:String
+if let convertedRank = Rank(rawValue: 11) {
+    threeDescription = convertedRank.simpleDescription()
+    print(threeDescription)
+}
