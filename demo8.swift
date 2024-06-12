@@ -1,5 +1,6 @@
+var y = 10
+
 func returnFifteen() -> Int {
-    var y = 10
     func add() {
         y += 5
     }
@@ -7,5 +8,7 @@ func returnFifteen() -> Int {
     return y
 }
 
-let num = returnFifteen()
+let fun = returnFifteen
+fun()
+let num = fun()
 print(num)
